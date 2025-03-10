@@ -29,8 +29,6 @@ def license_plate(x):
 
     if len(x_patterns_1) == 2 and len(x_patterns_2) == 2 and len(x_patterns_3) == 2 and x_patterns_1.isalpha() and x_patterns_2.isdigit() and x_patterns_3.isdigit():
         print("Valid")
-    elif len(x_patterns_1) == 2 and len(x_patterns_2) == 2 and len(x_patterns_3) == 2 and x_patterns_1.isdigit() and x_patterns_2.isdigit() and x_patterns_3.isalpha():
-        print("Valid")
     elif len(x_patterns_1) == 2 and len(x_patterns_2) == 2 and len(x_patterns_3) == 2 and x_patterns_1.isdigit() and x_patterns_2.isalpha() and x_patterns_3.isdigit():
         print("Valid")
     elif len(x_patterns_1) == 2 and len(x_patterns_2) == 2 and len(x_patterns_3) == 2 and x_patterns_1.isalpha() and x_patterns_2.isdigit() and x_patterns_3.isalpha():
