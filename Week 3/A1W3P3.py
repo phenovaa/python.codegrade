@@ -1,17 +1,15 @@
-def modular_rectangles(w, h):
-    w = int(w)
-    h = int(h)
+def modular_rectangles(width, height):
 
     counter = 0
 
-    for a in range(h):
-        for b in range(w):
+    for a in range(height):
+        for b in range(width):
             print(counter, end=" ")
             counter += 1
             if counter > 9:
                 counter = 0
         print()
 
-width_input = input("width: ")
-height_input = input("height: ")
+width_input = int(input("width: "))
+height_input = int(input("Height: "))
 modular_rectangles(width_input, height_input)
