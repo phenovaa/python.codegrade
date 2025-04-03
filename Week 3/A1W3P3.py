@@ -1,15 +1,18 @@
 def modular_rectangles(width, height):
+    width = int(width)
+    height = int(height)
 
-    counter = 0
+    typewriter = 0
 
-    for a in range(height):
-        for b in range(width):
-            print(counter, end=" ")
-            counter += 1
-            if counter > 9:
-                counter = 0
+    for h in range(height):
+        for w in range(width):
+            print(typewriter, end=" ")
+            if typewriter < 9:
+                typewriter += 1
+            else:
+                typewriter = 0
         print()
 
-width_input = int(input("width: "))
-height_input = int(input("Height: "))
+width_input = input("width: ")
+height_input = input("height: ")
 modular_rectangles(width_input, height_input)
